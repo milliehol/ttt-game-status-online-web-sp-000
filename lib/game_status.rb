@@ -81,7 +81,7 @@ WIN_COMBINATIONS = [
 
 ]
 
-xwon = nil
+$xwon = nil
 def won?(board)
   #WIN_COMBINATIONS.each do |win_combination|
 
