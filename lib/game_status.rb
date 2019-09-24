@@ -125,10 +125,10 @@ end
 end
 
 def draw?(board)
-  if won == false && full?(board) == true
+  if won?(board) == false
     return true
   else
-    return false
+    return negative
   end
 
 end
