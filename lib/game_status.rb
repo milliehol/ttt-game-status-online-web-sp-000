@@ -103,10 +103,10 @@ def won?(board)
   position_3 = board[win_index_3] # load the value of the board at win_index_3
 
   if position_1 == "X" && position_2 == "X" && position_3 == "X"
-    xwon = true
+    $xwon = true
     return WIN_COMBINATIONS[i] # return the win_combination indexes that won.
   elsif position_1 == "O" && position_2 == "O" && position_3 == "O"
-    xwon = false
+    $xwon = false
     return WIN_COMBINATIONS[i]
   else
     false
@@ -144,9 +144,9 @@ end
 
 def winner(board)
   won?(board)
-  if xwon == true
+  if $xwon == true
     return "X"
-  elsif xwon == false
+  elsif $xwon == false
     return "O"
   else
     return nil
