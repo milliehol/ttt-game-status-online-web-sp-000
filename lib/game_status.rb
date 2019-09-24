@@ -125,7 +125,7 @@ end
 end
 
 def draw?(board)
-  if won?(board) == false
+  if won?(board) == falsey
     return true
   else
     return negative
