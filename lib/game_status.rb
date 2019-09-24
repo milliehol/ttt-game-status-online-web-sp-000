@@ -146,7 +146,7 @@ def winner(board)
   won?(board)
   if $xwon == true
     return "X"
-  elsif $xwon == false
+  elsif $xwon == false && won?(board) != nil
     return "O"
   else
     return nil
