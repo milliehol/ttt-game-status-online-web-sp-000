@@ -128,7 +128,7 @@ def draw?(board)
   if won?(board) == nil
     return true
   else
-    return negative
+    return false
   end
 
 end
